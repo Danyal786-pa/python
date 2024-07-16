@@ -1,0 +1,53 @@
+print("welcome to computer quiz !")
+
+playing = input("Do You Want To Play ?  ")
+if playing.lower() != "yes":
+    quit()
+    
+print(" Ok Lets Play ")
+score=0
+
+question = input(" What Does CPU Stands For  ?  ")
+if question.lower() == "centeral processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+question = input(" What Does GPU Stands For  ?  ")
+if question.lower() == "general processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+question = input(" What Does GPU Stands For  ?  ")
+if question.lower() == "general processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+question = input(" What Does GPU Stands For  ?  ")
+if question.lower() == "general processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+question = input(" What Does GPU Stands For  ?  ")
+if question.lower() == "general processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+question = input(" What Does GPU Stands For  ?  ")
+if question.lower() == "general processing unit":
+    print("correct")
+    score += 1
+else:
+    print("incorrect")
+    
+print("you got " +str(score) + " question correct")
+print("you got " +str((score/6) *100) + " %score")
