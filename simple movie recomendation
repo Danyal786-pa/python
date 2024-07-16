@@ -1,0 +1,42 @@
+def recommend_movie():
+    # Movie ratings dictionary (movie_name: rating)
+    movie_ratings = {
+        "Khuda Kay Liye": 8.0,
+        "Bol": 8.2,
+        "Waar": 7.9,
+        "Load Wedding": 7.6,
+        "Punjab Nahi Jaungi": 7.8,
+        "Jawani Phir Nahi Ani": 8.1,
+        "Cake": 7.7,
+        "Na Maloom Afraad": 7.5,
+        "Manto": 8.0,
+        "Parwaaz Hai Junoon": 7.5,
+        "Dil Chahta Hai": 8.1,
+        "3 Idiots": 8.4,
+        "Baahubali: The Beginning": 8.1,
+        "Mughal-E-Azam": 8.4,
+        "Lagaan": 8.1,
+        "Rang De Basanti": 8.2,
+        "Gangs of Wasseypur": 8.2,
+        "PK": 8.1,
+        "Chak De! India": 8.2,
+        "Dangal": 8.4
+    }
+    
+    # user input ye le ga
+    user_movie = input("Enter a movie you like: ")
+    
+    # movie recommend karay ga agar ye dictionary me presen ho gi to
+    if user_movie in movie_ratings:
+        rating = movie_ratings[user_movie]
+        print(f"If you liked '{user_movie}', you might also like:")
+        
+        # Print movies with similar or higher ratings
+        for movie, rate in movie_ratings.items():
+            if rate >= rating and movie != user_movie:
+                print(f"- {movie}")
+    else:
+        print(f"Sorry, '{user_movie}' is not in our database.")
+
+# Example usage:
+recommend_movie()
