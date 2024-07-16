@@ -1,0 +1,23 @@
+number=43
+guess=int(input("guess the number plz "))
+ 
+if guess > number:
+    print(" guessed number is greater then the answer")
+elif guess< number:
+    print("guessed number is less then answer")
+elif guess == number:
+    print("guessed number is equal to answer")
+
+                      Or
+
+number = 43
+while True:
+    guess = int(input("Guess the number, please: "))
+    
+    if guess > number:
+        print("The guessed number is greater than the answer.")
+    elif guess < number:
+        print("The guessed number is less than the answer.")
+    else:
+        print("Congratulations! You guessed the correct number")
+        break  
