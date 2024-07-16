@@ -1,0 +1,18 @@
+def main():
+    number = get_number()
+    print("Factorial is:", factorial_recursive(number))
+    
+def get_number():
+    while True:
+        n = int(input("Factorial of which number you want to find? "))
+        if n > 0:
+            break
+    return n
+    
+def factorial_recursive(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+
+main()
